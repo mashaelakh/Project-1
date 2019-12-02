@@ -1,0 +1,20 @@
+.tic {
+    height: 100px;
+    width: 100px;
+    background:gray;
+    border:2px solid black;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+.row {
+    display:flex;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
