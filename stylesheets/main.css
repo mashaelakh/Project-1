@@ -3,6 +3,10 @@
     width: 100px;
     background:gray;
     border:2px solid black;
+    text-align: center ;
+    font-size: 50px;
+    line-height: 100px;
+    /**background-image:  url("../images/xo.jpg");**/
 }
 .container{
     display:flex;
@@ -16,5 +20,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: lightblue;
+
 
 }
+
+h1 {
+    color: lightcoral
+
+}
+
+h3 {
+    border:  solid white;
+    text-align: center;
+
+}
+.gif {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+
+}
+
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .gif {
+            position: fixed;
+            top: 30%;
+            left: 3%;
+        
+        }
+    }
+    
