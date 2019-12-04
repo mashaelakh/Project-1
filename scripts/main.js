@@ -1,8 +1,8 @@
 $(function(){
     // getting users names and choice of X or O !
     
-    let sound = new Audio("../xo.mp3"); // when user play x
-    let sound2 = new Audio("../xo2.mp3"); //  when user play o
+    let sound = new Audio("xo.mp3"); // when user play x
+    let sound2 = new Audio("xo2.mp3"); //  when user play o
     let counter=0;
     let game = ['','','',
                 '','','',
@@ -143,7 +143,7 @@ $(function(){
         if(win ===choose) {
             v1++
             $(".gif").html(
-                `<img src="../images/200.gif" alt="Smiley face" ></img>`
+                `<img src="images/200.gif" alt="Smiley face" ></img>`
                 )
             setTimeout(function(){
                 $(".gif").html("")
@@ -154,7 +154,7 @@ $(function(){
             
             v2++
             $(".gif").html(
-                `<img src="../images/200.gif" alt="Smiley face"></img>`
+                `<img src="images/200.gif" alt="Smiley face"></img>`
                 )
 
             setTimeout(function(){
