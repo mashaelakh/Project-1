@@ -69,40 +69,66 @@ $(function(){
         // check who is winner
         console.log(game)
         if (game[0]==game[1]&&game[0]==game[2]&&game[0]!=''){
-            alert('you win '+game[0])
-            rest(game [0])
+            setTimeout(function(){
+                alert('you win '+game[0])
+                rest(game [0])
+            }, 300);
+            
         }
         if (game[3]==game[4]&&game[3]==game[5]&&game[3]!=''){
+           setTimeout(function(){
             alert('you win '+game[3])
-            rest(game [3])
+            rest(game [3]) 
+               
+            }, 300);
+
         }
         if (game[6]==game[7]&&game[6]==game[8]&&game[6]!=''){
-            alert('you win '+game[6])
-            rest(game[6])
+            setTimeout(function(){
+                alert('you win '+game[6])
+                rest(game[6])
+               
+            }, 300);
         }
         if (game[0]==game[3]&&game[0]==game[6]&&game[0]!=''){
-            alert('you win '+game[0])
-            rest(game[0])
+            setTimeout(function(){
+                alert('you win '+game[0])
+                rest(game[0])
+            }, 300);
         }
         if (game[1]==game[4]&&game[1]==game[7]&&game[1]!=''){
-            alert('you win '+game[1])
+            setTimeout(function(){
+                alert('you win '+game[1])
             rest(game[1])
+               
+            }, 300);
         }
         if (game[2]==game[5]&&game[2]==game[8]&&game[2]!=''){
-            alert('you win '+game[2])
+            setTimeout(function(){
+                alert('you win '+game[2])
             rest(game[2])
+               
+            }, 300);
         }
         if (game[0]==game[4]&&game[0]==game[8]&&game[0]!=''){
-            alert('you win '+game[0])
+            setTimeout(function(){
+                alert('you win '+game[0])
             rest(game[0])
+               
+            }, 300);
         }
         if (game[2]==game[4]&&game[2]==game[6]&&game[2]!=''){
-            alert('you win '+game[2])
+            setTimeout(function(){
+                alert('you win '+game[2])
             rest(game[2])
+               
+            }, 300);
         }
         if (counter==9) {
-            alert('tie')
-            rest()
+            setTimeout(function(){
+                alert('tie')
+                rest()
+            }, 300);
         }
     }
            
@@ -133,7 +159,7 @@ $(function(){
 
             setTimeout(function(){
                 $(".gif").html("")
-            }, 5000);
+            }, 4000);
             }
         else {
             tie++

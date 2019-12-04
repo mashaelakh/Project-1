@@ -1,6 +1,6 @@
 .tic {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     background:gray;
     border:2px solid black;
     text-align: center ;
@@ -26,22 +26,36 @@ body {
 }
 
 h1 {
+    font-size: 40 px;
+    font-family: Monospace;
     color: lightcoral
+    
+    
 
 }
 
 h3 {
     border:  solid white;
     text-align: center;
+    padding:2px;
+    display: grid;
 
 }
 .gif {
     position: fixed;
     top: 30%;
     left: 35%;
-
 }
-
+.span1 {
+    display:flex;
+    width: 70px;
+    height: 150px;
+}
+.span2{
+    display: flex;
+    width :70px;
+    height:150px;
+}
 
 @media only screen 
     and (device-width : 375px) 
