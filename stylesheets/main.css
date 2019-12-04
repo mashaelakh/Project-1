@@ -46,6 +46,12 @@ h3 {
     left: 35%;
 }
 
+.gif2 {
+    position: fixed;
+    top: 10px;
+    left:50px;
+}
+
 
 
 @media only screen 
