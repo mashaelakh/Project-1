@@ -1,7 +1,7 @@
 .tic {
     height: 90px;
     width: 90px;
-    background:gray;
+    background: lightpink;
     border:2px solid black;
     text-align: center ;
     font-size: 50px;
@@ -11,6 +11,7 @@
 .container{
     display:flex;
     flex-direction: column;
+   
 }
 .row {
     display:flex;
@@ -22,15 +23,12 @@ body {
     align-items: center;
     background: lightblue;
 
-
 }
 
 h1 {
     font-size: 40 px;
     font-family: Monospace;
-    color: lightcoral
-    
-    
+    color: lightcoral  
 
 }
 
@@ -38,24 +36,17 @@ h3 {
     border:  solid white;
     text-align: center;
     padding:2px;
-    display: grid;
+    margin: 4px;
+    /* display: grid; */
 
 }
 .gif {
     position: fixed;
-    top: 30%;
+    top: 25%;
     left: 35%;
 }
-.span1 {
-    display:flex;
-    width: 70px;
-    height: 150px;
-}
-.span2{
-    display: flex;
-    width :70px;
-    height:150px;
-}
+
+
 
 @media only screen 
     and (device-width : 375px) 
@@ -63,7 +54,7 @@ h3 {
     and (-webkit-device-pixel-ratio : 3) { 
         .gif {
             position: fixed;
-            top: 30%;
+            top: 15%;
             left: 3%;
         
         }

@@ -139,7 +139,7 @@ $(function(){
 
     function rest(win){
         
-        $(".tic").css("background", "#AAB8CC")
+        $(".tic").css("background", "lightpink")
         if(win ===choose) {
             v1++
             $(".gif").html(
@@ -186,7 +186,7 @@ $(function(){
             $(target).css('background','#C3E3DF')
            && sound.play();
         else 
-         $(target).css('background','#F1C4C8')
+         $(target).css('background','#FFEFD5')
          && sound2.play();
          
       }
@@ -194,3 +194,5 @@ $(function(){
 })
 // 
 // $(".img").append('<img src="../images/xo.jpg" alt="Smiley face">')
+
+       
