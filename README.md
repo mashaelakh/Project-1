@@ -103,7 +103,8 @@ using if statement method.
 ```
 
 ## Challenges: 
--
+The main challenge was in implementing the game from scratch
+with no errors.
 
 ## Unsolved problems which would be fixed in future iterations.
 AI

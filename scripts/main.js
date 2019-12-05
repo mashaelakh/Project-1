@@ -1,8 +1,9 @@
 $(function(){
     // getting users names and choice of X or O !
-    
+
     let sound = new Audio("xo.mp3"); // when user play x
     let sound2 = new Audio("xo2.mp3"); //  when user play o
+    let sound3= new Audio("sound.mp3");
     let counter=0;
     let game = ['','','',
                 '','','',
@@ -12,6 +13,7 @@ $(function(){
                 let tie = 0
     let player1 = prompt("Enter your name, please:", "");
     $('#n1').text(player1)
+    
 
     let choose = prompt("choose X OR O","");
     let chooseTwo;
@@ -25,15 +27,12 @@ $(function(){
         choose = "O"
         chooseTwo = "X"
         console.log("player 1 is O")
+        
     }
     
     let player2 = prompt("Enter your name, please:","")
     $('#n2').text(player2)
 
-    if (player1=='X') {
-        console.log("You're O")
-    }
-    else console.log("You're X")
 
 
     function gameq(event){
@@ -42,7 +41,7 @@ $(function(){
         target.off('click')
         
 
-        // console.log(counter) setting the array
+        // setting the array, switching between x and o
         if (counter%2==0){
             target.text(choose) 
 
@@ -52,19 +51,11 @@ $(function(){
         } 
         change(target)
         counter++
-        //get the value & id => index
-        // var value => content
-        // var id => index
-        // games[index] = value
+
         let value = target.text()
         let id = target.attr('id')
         
-        // console.log(id)
-        // console.log(value)
         game[id]=value 
-        
-        // set all values of the box in the array
-        // console.log(games)
 
         // check who is winner
         console.log(game)
@@ -131,14 +122,17 @@ $(function(){
             }, 300);
         }
     }
-           
+    
 
     $('.tic').on('click',gameq)
-    
+
+
     //function rest 
 
     function rest(win){
-        
+        if(win){
+            sound3.play();
+        }
         $(".tic").css("background", "lightpink")
         if(win ===choose) {
             v1++
@@ -163,6 +157,12 @@ $(function(){
             }
         else {
             tie++
+            $(".gif2").html(
+                `<img src="images/0.gif" alt="Smiley face"></img>`
+                )
+                setTimeout(function(){
+                    $(".gif2").html("")
+                }, 4000);
           
         }
         $(".one").text(v1)
@@ -192,7 +192,5 @@ $(function(){
       }
 
 })
-// 
-// $(".img").append('<img src="../images/xo.jpg" alt="Smiley face">')
 
        
